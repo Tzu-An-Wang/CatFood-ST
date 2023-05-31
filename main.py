@@ -65,7 +65,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 
 input_text = st.text_area(
     "Type in your cat's symptom",
-    placeholder="ex: My cat vomits, gets thirsty, lose weith ...",
+    placeholder="ex: My cat vomits, gets thirsty, lose weight ...",
 )
 button = st.button("Submit")
 
@@ -88,7 +88,7 @@ elif button and input_text != "":
         OPENAI_API_KEY = st.session_state.get("OPENAI_API_KEY")
         with st.spinner("Wait for it ... Meow"):
             st.session_state["button"] = True
-            col_pic_left, col_disease, col_pic_right = st.columns([0.5, 1, 0.5])
+            col_pic_left, col_disease, col_pic_right = st.columns([0.4, 1, 0.4])
             with col_pic_left:
                 image = Image.open("pic/cover_left.jpg")
                 st.image(image)
@@ -137,6 +137,7 @@ elif button and input_text != "":
             with col_description:
                 with st.expander("Disease Description", expanded=True):
                     st.markdown(f"**{layer_2_result['Disease description']}**")
+            st.warning("Ask your vet for further advice! ", icon="🩺")
             tab1, tab2, tab3 = st.tabs(
                 ["Dietary Suggestions", "Food Suggestions", "Nutrients Suggestions"]
             )
