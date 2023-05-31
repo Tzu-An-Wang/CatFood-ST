@@ -63,7 +63,10 @@ hide_st_style = """
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
-input_text = st.text_area("Type in your cat's symptom")
+input_text = st.text_area(
+    "Type in your cat's symptom",
+    placeholder="ex: My cat vomits, gets thirsty, lose weith ...",
+)
 button = st.button("Submit")
 
 refine_target = [

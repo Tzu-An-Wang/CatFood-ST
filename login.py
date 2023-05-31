@@ -15,7 +15,7 @@ def sidebar_login(db):
             "3. Enjoy the rest Meow!"
         )
         api_key_input = st.text_input(
-            "OpenAI API Key",
+            "OpenAI API Key (press enter)",
             placeholder="Paste your OpenAI API key here (sk-...)",
             help="You can get your API key from https://platform.openai.com/account/api-keys.",
             value=st.session_state.get("OPENAI_API_KEY", ""),
