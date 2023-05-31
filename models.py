@@ -138,10 +138,10 @@ def create_df_food_nutrient(db):
 def get_CatFood(df, nutrient_list, top):
     nutrient_dict = {
         "Protein": {"High": 0.4, "Moderate": 0.46, "Low": 0.45, "None": 0},
-        "Fat": {"High": 0.23, "Moderate": 0.2, "Low": 0.16, "None": 0},
-        "Carbs": {"High": 0.2, "Moderate": 0.15, "Low": 0.1, "None": 0},
-        "Fiber": {"High": 0.05, "Moderate": 0.04, "Low": 0.03, "None": 0},
-        "Moisture": {"High": 0.1, "Moderate": 0.9, "Low": 0.8, "None": 0},
+        "Fat": {"High": 0.23, "Moderate": 0.23, "Low": 0.16, "None": 0},
+        "Carbs": {"High": 0.2, "Moderate": 0.2, "Low": 0.1, "None": 0},
+        "Fiber": {"High": 0.02, "Moderate": 0.02, "Low": 0.018, "None": 0},
+        "Moisture": {"High": 0.1, "Moderate": 0.1, "Low": 0.09, "None": 0},
         "level": {"High": ">=", "Moderate": "<=", "Low": "<=", "None": ">="},
     }
     filter_expr = ""
