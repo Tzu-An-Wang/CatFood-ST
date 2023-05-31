@@ -31,27 +31,27 @@ response_schemas_layer_2 = [
     ),  # Each dietary suggestion should be in one sentence and )
     ResponseSchema(
         name="Protein",
-        description="if there's no suggestions, reply none, else reply only High, Moderate or Low.",
+        description="if there's no suggestions, reply none, else reply only one of the followings High, Moderate, Low.",
     ),
     ResponseSchema(
         name="Fat",
-        description="if there's no suggestions, reply none, else reply only High, Moderate or Low.",
+        description="if there's no suggestions, reply none, else reply only one of the followings High, Moderate, Low.",
     ),
     ResponseSchema(
         name="Carbs",
-        description="if there's no suggestions, reply none, else reply only High, Moderate or Low.",
+        description="if there's no suggestions, reply none, else reply only one of the followings High, Moderate, Low.",
     ),
     ResponseSchema(
         name="Fiber",
-        description="if there's no suggestions, reply none, else reply only High, Moderate or Low.",
+        description="if there's no suggestions, reply none, else reply only one of the followings High, Moderate, Low.",
     ),
     ResponseSchema(
         name="Ash",
-        description="if there's no suggestions, reply none, else reply only High, Moderate or Low.",
+        description="if there's no suggestions, reply none, else reply only one of the followings High, Moderate, Low.",
     ),
     ResponseSchema(
         name="Moisture",
-        description="if there's no suggestions, reply none, else reply only High, Moderate or Low.",
+        description="if there's no suggestions, reply none, else reply only one of the followings High, Moderate, Low.",
     ),
     ResponseSchema(
         name="Minerals, vitamins and supplements",
